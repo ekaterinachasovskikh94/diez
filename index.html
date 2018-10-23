@@ -1,131 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<title>diez-chasovskikh</title>
-	<link rel="stylesheet" href="style/fonts.css">
 	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/fonts.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-	<div class="wrapper">
-		<div class="container">
+	<!-- <div class="wrapper"> -->
+		<!-- <div class="container"> -->
+
 			<!-- PROMO -->
-			<section class="promo">
-				<header class="header">
-				<div class="logo">
-					<h2 class="logotip">DIEZ</h2>
-				</div>
-				<button class="hamburger"></button>
-				<nav class="menu">
-					<ul class="menu--promo">
-						<li class="promo--item">НАПРАВЛЕНИЯ</li>
-						<li class="promo--item">О ШКОЛЕ</li>
-						<li class="promo--item">ВИДЕО</li>
-						<li class="promo--item">КОНТАКТЫ</li>
-					</ul>
-				</nav>
-			</header>
-				<h1 class="promo_title">Diez — школа музыкального искусства</h1>
-				<p class="promo_text">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
-				<div class="button">
-					<a href="#" class="first__lesson">ВВОДНЫЙ УРОК</a>
+			<section class="promo wrapper">
+				<div class="container promo__container">
+					<header class="header">
+						<div class="block logo__menu">
+							<div class="logo">	<span class="logotip">Diez</span>
+							</div>
+							<!-- <button class="burger"></button> -->
+							<button class="mobile-btn btn-wrapper"> <span class="btn-burger" data-state="off">Menu</span>
+							</button>
+							<nav class="main-nav">
+								<ul class="main-nav__list">
+									<li class="main-nav__item">Направления</li>
+									<li class="main-nav__item">О школе</li>
+									<li class="main-nav__item">Видео</li>
+									<li class="main-nav__item">Контакты</li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+					<div class="block title__text">
+						<h1 class="title promo__title"><span class="title_span">Diez — Ш</span>Школа музыкального искусства</h1>
+						<p class="text promo__text">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
+						<div class="button promo_button">	<a href="#" class="promo__link">ВВОДНЫЙ УРОК</a>
+						</div>
+					</div>
 				</div>
 			</section>
+
 			<!-- DIRECTIONS -->
-			<section class="main_directions">
-				<h2 class="second--title">Растим музыкантов</h2>
-				<div class="block__vocal__gitar">
-				<div class="item__vocal">
-					<h3 class="title">Вокал</h3>
-					<p class="text">Пой, как Селин Дион и Эми Вайнхаус</p>
-					<img src="#" alt="vocal" class="image">
-					</div>
-					<div class="item__gitar">
-						<h3 class="title">Гитара</h3>
-						<p class="text">Начни играть, как Джими Хендрикс</p>
-						<img src="#" alt="gitar" class="image">
+			<section class="main__directions">
+				<div class="container direction__container">
+					<h2 class="title main__title">Растим музыкантов</h2>
+					<div class="block__top__directions">
+
+						<div class="item__vocal">
+							<div class="element">
+								<h3 class="title">Вокал</h3>
+								<p class="text">Пой, как Селин Дион и Эми Вайнхаус</p>
+							</div>
+						</div>
+						<div class="item__gitar">
+							<div class="element">
+								<h3 class="title">Гитара</h3>
+								<p class="text">Начни играть, как Джими Хендрикс</p>
+							</div>
 						</div>
 						</div>
-						<div class="block__foptepiano__button">
-						<div class="item__foptepiano">
-							<h3 class="title">Фортепиано</h3>
-							<p class="text">Чувствуй клавиши, как Людовико Эйнауди</p>
-							<img src="#" alt="foptepiano" class="image">
-						</div>
-						<div class="button">
-							<a href="#" class="all__kind">ВСЕ НАПРАВЛЕНИЯ</a>
-						</div>
+						<div class="block__buttom__directions">
+
+							<div class="item__foptepiano">
+								<div class="element">
+									<h3 class="title">Фортепиано</h3>
+									<p class="text">Чувствуй клавиши, как Людовико Эйнауди</p>
+								</div>
+							</div>
+							<div class="button__right">
+								<a href="#" class="link">ВСЕ НАПРАВЛЕНИЯ</a>
+							</div>
 						</div>
 			</section>
+
 			<!-- ADVANTAGES -->
-			<section class="main_advantages">
-				<h2 class="second--title">Задаем темп</h2>
-				<div class="block__composition__result">
-				<div class="item__composition">
-					<h3 class="title">Состав</h3>
-					<p class="text">Учись только у профессионалов</p>
-					<img src="#" alt="composition" class="image">
-					</div>
-					<div class="item__result">
-						<h3 class="title">Результат</h3>
-						<p class="text">Выуступай на отчетных концертах</p>
-						<img src="#" alt="result" class="image">
-					</div>
-					</div>
-					<div class="block__studio__button">
-						<div class="item__studio">
-							<h3 class="title">Студия</h3>
-							<p class="text">Записывай песни каждый месяц</p>
-							<img src="#" alt="studio" class="image">
+			<section class="main__advantages">
+				<div class="container direction__container">
+					<h2 class="title main__title__advantages">Задаем темп</h2>
+
+					<div class="block__top__advantages">
+
+						<div class="item__composition">
+							<div class="element">
+								<h3 class="title">Состав</h3>
+								<p class="text">Учись только у профессионалов</p>
 							</div>
-							<div class="button">
-								<a href="#" class="record">Записаться</a>
 						</div>
-				</div>
-			</section>
-			<!-- VIDEO -->
-			<section class="main_video">
-				<h2 class="second--title">В стенах школы</h2>
-				<div class="element__left">
-					<video>
-					<source src="URL">
-					</video>
-				</div>
-				<div class="element__right">
-					<video>
-					<source src="URL">
-					</video>
-						<video>
-						<source src="URL">
-						</video>
-							<video>
-							<source src="URL">
-							</video>
-								<video>
-								<source src="URL">
-								</video>
-				</div>				
-			</section>
-			<!-- CONTACTS -->
-			<section class="main_contacts">
-				<h2 class="second--title">Ждем тебя</h2>
-				<div class="address">СПб, 6-я Линия ВО 42</div>
-					<div class="tel">
-						<a href="tel:+78125665656">+7 (812) 566 56 56</a>
-					</div>
-				<div class="map">
-					<img src="#" alt="map">
-				</div>
-					<div class="button">
-						<a href="#" class="record">Записаться</a>
+						<div class="item__result">
+							<div class="element">
+								<h3 class="title">Результат</h3>
+								<p class="text">Выуступай на отчетных концертах</p>
 							</div>
+						</div>
+						</div>
+
+						<div class="block__buttom__advantages">
+
+							<div class="item__studio">
+								<div class="element">
+									<h3 class="title">Студия</h3>
+									<p class="text">Записывай песни каждый месяц</p>
+								</div>
+								</div>
+									<div class="button__right">	
+										<a href="#" class="link">Записаться</a>
+								</div>
 			</section>
-</main>
-<!-- FOOTER -->
-<footer class="footer">
+
+			<!-- VIDEO -->
+	<section class="main__video">
+		<div class="container video__container">
+			<h2 class="title main__title">В стенах школы</h2>
+			<div class="box__left">
+					<div class="element">
+<!-- 				<div class="play__btm"> -->
+					<img src="images/play button.png" alt="play" class="btm">
+<!-- 				</div> -->
+
+					<h3 class="title content">Зимняя вишня</h3>
+					<p class="text content">Финальный концерт 2018 года</p>
+				</div>
+			</div>
+			<div class="box__right">
+				<div></div>
+			</div>
+		</div>
+	</section>
+
+			<!-- CONTACTS -->
+<section class="main_contacts">
+	<div class="container contacts__container">
+		<h2 class="title main__title">Ждем тебя</h2>
+		<div class="aside">
+			<div class="address">СПб, 6-я Линия ВО 42</div>
+			<div class="tel">	<a href="tel:+78125665656">+7 (812) 566 56 56</a>
+			</div>
+			</div>
+			<div class="map">
+				<img src="images/geotag.png" alt="map" class="map_image">
+			</div>
+			<div class="button"> <a href="#" class="record">Записаться</a>
+			</div>
+		</div>
+</section>
+
+			<!-- FOOTER -->
+			<footer class="footer">
 				<div class="logo">
-					<h2 class="logotip">DIEZ</h2>
+					<span class="logotip_footer">Diez</span>
 				</div>
 				<nav class="footer_menu">
 					<ul class="menu__social">
@@ -135,7 +159,10 @@
 						<li class="menu--item">VKONTAKTE</li>
 					</ul>
 				</nav>
-	</footer>
-		</div>
+			</footer>
+		<!-- </div> -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
 </body>
+
 </html>

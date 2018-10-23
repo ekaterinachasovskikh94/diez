@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+}
+ul{
+	list-style: none;
+}
+h2{
+	position: relative;
+}
+h2:before{
+	content: '';
+	width: 16px;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #eec643;
+	top: -3px;
+	left: 0;
+
+}
+
+h2:after{
+	content: '';
+	width: 16px;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #eec643;
+	bottom: -2px;
+	left: 0;
+	font-weight: 700;
+}
+
+h3.title
+{
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1;
+	color: #f9fcfc;
+	margin: 3px;
+}
+.body{
+	margin: auto;
+}	
+
+.btn-wrapper {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  width: 30px;
+}
+.btn-wrapper:hover {
+  /*background: #eee;*/
+}
+
+.btn-burger {
+  background: #fff;
+  /*border: 1px solid #fff;*/
+  /*border-radius: 4px;*/
+  bottom: 0;
+  font-size: 1px;
+  height: 4px;
+  left: 0;
+  margin: auto 4px;
+  position: absolute;
+  right: 0;
+  text-indent: -9999999px;
+  top: 0;
+  transition: .2s all;
+}
+.btn-burger::before, .btn-burger::after {
+  background: #fff;
+  /*border-radius: 4px;*/
+  content: '';
+  height: 2px;
+  left: -1px;
+  margin: auto;
+  position: absolute;
+  transition: all .2s 0s;
+  width: calc(100% + 2px);
+}
+.btn-burger::before {
+  top: -8px;
+}
+.btn-burger::after {
+  bottom: -8px;
+}
+.btn-burger[data-state="on"] {
+  background: transparent;
+  /*border-color: #fff;*/
+  height: 100%;
+  margin: auto;
+}
+.btn-burger[data-state="on"]::before, .btn-burger[data-state="on"]::after {
+  transition: all .2s .4s;
+}
+.btn-burger[data-state="on"]::after {
+  bottom: 0;
+  top: 0;
+  transform: rotate(45deg);
+}
+.btn-burger[data-state="on"]::before {
+  bottom: 0;
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+
+.wrapper{
+	max-width: 1280px;
+	margin: auto;
+}
+.container {
+	min-width: 320px;
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 15px;
+}
+.text{
+	font-family: 'pt-sans';
+	font-size: 16px;
+	font-weight: 400;
+	color: #f9fcfc;
+	padding-bottom: 5px;
+	margin: 3px;
+}
+.title{
+	font-family: 'Prata';
+	font-size: 30px;
+	font-weight: 400;
+	color: #eec643;
+}
+.button{
+	box-sizing: border-box;
+	width: 288px;
+	height: 60px;
+	background-color: #eec643;
+	text-align: center;
+	padding: 22px;
+}
+@media (min-width: 1024px) {
+
+	.container {
+		padding: 0;
+	}
+}
+
+
+/*PROMO*/
+
+.promo{
+	background-image: url(../images/bg_main_320.jpg);
+	height: 536px;
+}
+.logo{
+	padding: 24px 0px 44px 16px;
+}	
+.logotip{
+	font-family: 'Prata';
+	font-size: 30px;
+	width: 65px;
+	left: 24px;
+	font-weight: 400;
+	color: #eec643;
+}
+
+.mobile-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+}
+
+.main-nav{
+	display: none;
+	background-color: #fff;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main-nav__list {
+}
+.main-nav__item {
+	text-transform: uppercase;
+}
+
+.promo__title{
+	font-size: 32px;
+	color: #fff;
+	padding: 44px 73px 20px 16px;
+	width: 231px;
+	height: 119px;
+	line-height: 42px;
+}
+.title_span{
+display: none;
+}
+.promo__text{
+	color: #fff;
+	padding: 39px 0px 95px 16px;
+}
+
+.promo_button{
+	margin: -17px 4px;
+}
+
+/*DIRECTIONS*/
+
+.main__title{
+	width: 183px;
+	font-size: 30px;
+	color: #021a23;
+}
+.element{
+	text-align: left;
+	padding:30px 80px 11px 9px;
+}
+.item__vocal{
+	width: 288px;
+	height: 144px;
+	background-image: url(../images/directions_card_img_2_320.jpg);
+	margin-bottom: 16px;
+}
+.item__gitar{
+	width: 288px;
+	height: 144px;
+	background-image: url(../images/directions_card_img_1_320.jpg);
+}
+.item__foptepiano{
+	width: 212px;
+	height: 144px;
+	background-image: url(../images/directions_card_img_320.jpg);
+}
+
+.block__buttom__directions{
+	display: flex;
+	padding: 16px 1px;
+}
+
+.button__right{
+	flex-wrap: wrap;
+	width: 144px;
+	height: 60px;
+	box-sizing: border-box;
+	background-color: #eec643;
+	transform: rotate(-90deg);
+}
+.link{
+	color: #021a23;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+
+
+/*ADVANTAGES*/
+.main__title__advantages{
+	width: 196px;
+	font-size: 30px;
+	color: #021a23;
+}
+/*.element__advantages{
+	text-align: left;
+	width: 180px;
+	padding:15px 0px 11px 9px;
+}*/
+.item__composition{
+	width: 288px;
+	height: 144px;
+	background-image: url(../images/advantages_card_img_1_320.jpg);
+	margin-bottom: 16px;
+}
+.item__result{
+	width: 288px;
+	height: 144px;
+	background-image: url(../images/advantages_card_img_2_320.jpg);
+}
+.item__studio{
+	width: 288px;
+	height: 144px;
+	background-image: url(../images/advantages_card_img_3_320.jpg);
+	margin-top: 16px;
+}
+
+.block__buttom__advantages{
+	display: flex;
+}
+
+
+/*VIDEO*/
+
+.box__left{
+	margin: 20px;
+	width: 240px;
+	height: 186px;
+	background-image: url(../images/video_card_img_1_320.jpg);
+}
+.content{
+	margin: auto;
+	width: 215px;
+}
+.box__left:before {
+	content: '';
+
+}
+.box__left:after {
+	content: '';
+
+}
+
+.btm{
+	margin: 0;
+	padding: 28px 29px 26px 109px;
+}
+
+/*CONTACTS*/
+
+.address{
+	color: black;
+}
+
+.tel{
+	color: black;
+}
+
+.map{
+	margin: 16px 2px;
+	background-image: url(../images/map.jpg);
+	background-repeat: no-repeat;
+	height: 216px;
+}
+.map_image{
+	padding: 95px 22px 14px 132px;
+}
+.aside{
+	padding-left: 15px;
+}
+
+/*FOOTER*/
+.logotip_footer{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. {
+	transform: rotate(90deg);
+	transform-origin: right bottom;
+	position: absolute;
+
+	/*transform: none;*/
+/*}
+
+.second--title {
+	position: relative;
+}
+.second--title:before {
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background-color: #ff0;
+	top: 0;
+	left: 0;
+}
+.second--title:after {
+		content: '';
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		background-color: #ff0;
+		bottom: 0;
+		left: 0;
+}
+*/
+
+@media (min-width: 1160px) {
+	/*menu*/
+.menu {
+	display: block;
+	background-color: transparent;
+	width: auto;
+	position: static;
+	color: #fff;	
+}
+.menu__list {
+	display: flex;
+}
+.menu__item {
+}
+.menu__item a {
+	text-transform: uppercase;
+}
+}

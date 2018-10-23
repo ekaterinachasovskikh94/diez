@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Prata';
+    src: url('subset-Prata-v8-cyrillic-regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt-sans';
+    src: url('subset-pt-sans-v9-cyrillic-regular.ttf') format('truetype'),
+    	url('subset-pt-sans-v9-cyrillic-regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
