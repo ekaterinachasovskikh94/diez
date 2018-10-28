@@ -77,8 +77,8 @@ h3.title
   /*border: 1px solid #fff;*/
   /*border-radius: 4px;*/
   bottom: 0;
-  font-size: 1px;
-  height: 4px;
+  font-size: 2px;
+  height: 2px;
   left: 0;
   margin: auto 4px;
   position: absolute;
@@ -169,6 +169,7 @@ h3.title
 
 .promo{
 	background-image: url(../images/bg_main_320.jpg);
+	background-repeat: no-repeat;
 	height: 536px;
 }
 .logo{
@@ -233,7 +234,7 @@ display: none;
 }
 .element{
 	text-align: left;
-	padding:30px 80px 11px 9px;
+	padding:33px 38px 0px 3px;
 }
 .item__vocal{
 	width: 288px;
@@ -250,6 +251,7 @@ display: none;
 	width: 212px;
 	height: 144px;
 	background-image: url(../images/directions_card_img_320.jpg);
+	margin-right: 9px;
 }
 
 .block__buttom__directions{
@@ -259,18 +261,20 @@ display: none;
 
 .button__right{
 	flex-wrap: wrap;
-	width: 144px;
-	height: 60px;
+	width: 60px;
+	height: 144px;
 	box-sizing: border-box;
 	background-color: #eec643;
-	transform: rotate(-90deg);
+	margin: auto;
+
 }
 .link{
 	color: #021a23;
 	font-weight: 400;
-	vertical-align: middle;
+	transform: rotate(-90deg);
+	position: absolute;
+	margin: 66px -33px;
 }
-
 
 
 /*ADVANTAGES*/
@@ -296,36 +300,47 @@ display: none;
 	background-image: url(../images/advantages_card_img_2_320.jpg);
 }
 .item__studio{
-	width: 288px;
+	width: 212px;
 	height: 144px;
 	background-image: url(../images/advantages_card_img_3_320.jpg);
-	margin-top: 16px;
+	margin: 16px 9px 17px 1px;
 }
 
 .block__buttom__advantages{
 	display: flex;
+}
+.link_advantages{
+	color: #fff;
+	margin: 74px -8px;
 }
 
 
 /*VIDEO*/
 
 .box__left{
-	margin: 20px;
 	width: 240px;
 	height: 186px;
+	margin: 20px;
 	background-image: url(../images/video_card_img_1_320.jpg);
 }
 .content{
 	margin: auto;
 	width: 215px;
 }
-.box__left:before {
-	content: '';
-
+.box__left__control{
+	width: 20px;
+	height: 20px;
+	border-top: 2px solid #eec643;
+	border-right: 2px solid #eec643;
+	transform: rotate(45deg);
 }
-.box__left:after {
+.box__left:before{
 	content: '';
-
+	width: 20px;
+	height: 20px;
+	border-top: 2px solid #eec643;
+	border-right: 2px solid #eec643;
+	transform: rotate(45deg);
 }
 
 .btm{
@@ -344,17 +359,21 @@ display: none;
 }
 
 .map{
-	margin: 16px 2px;
-	background-image: url(../images/map.jpg);
-	background-repeat: no-repeat;
-	height: 216px;
+margin: 16px 0px 16px 0px;
 }
-.map_image{
-	padding: 95px 22px 14px 132px;
-}
+
+
+
+
+
 .aside{
 	padding-left: 15px;
 }
+
+
+
+
+
 
 /*FOOTER*/
 .logotip_footer{
