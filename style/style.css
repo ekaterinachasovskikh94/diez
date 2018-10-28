@@ -370,30 +370,10 @@ margin: 16px 0px 16px 0px;
 	padding-left: 15px;
 }
 
-
-
-
-
-
 /*FOOTER*/
 .logotip_footer{
 	display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 . {
 	transform: rotate(90deg);
@@ -410,7 +390,7 @@ margin: 16px 0px 16px 0px;
 	content: '';
 	position: absolute;
 	height: 1px;
-	width: 100%;
+	width: 100%;s
 	background-color: #ff0;
 	top: 0;
 	left: 0;
