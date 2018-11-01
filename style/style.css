@@ -47,14 +47,7 @@ h2:after{
 	font-weight: 700;
 }
 
-h3.title
-{
-	font-family: "PT Sans", sans-serif;
-	font-size: 18px;
-	line-height: 1;
-	color: #f9fcfc;
-	margin: 3px;
-}
+
 .body{
 	margin: auto;
 }	
@@ -125,53 +118,26 @@ h3.title
 }
 
 
-.wrapper{
-	max-width: 1280px;
+/*.wrapper{
+	min-width: 1170px;
+	max-width: 100%;
 	margin: auto;
-}
+}*/
 .container {
 	min-width: 320px;
 	max-width: 1170px;
 	margin: auto;
 	padding: 0 15px;
 }
-.text{
-	font-family: 'pt-sans';
-	font-size: 16px;
-	font-weight: 400;
-	color: #f9fcfc;
-	padding-bottom: 5px;
-	margin: 3px;
-}
+
 .title{
 	font-family: 'Prata';
 	font-size: 30px;
 	font-weight: 400;
 	color: #eec643;
 }
-.button{
-	box-sizing: border-box;
-	width: 288px;
-	height: 60px;
-	background-color: #eec643;
-	text-align: center;
-	padding: 22px;
-}
-@media (min-width: 1024px) {
-
-	.container {
-		padding: 0;
-	}
-}
 
 
-/*PROMO*/
-
-.promo{
-	background-image: url(../images/bg_main_320.jpg);
-	background-repeat: no-repeat;
-	height: 536px;
-}
 .logo{
 	padding: 24px 0px 44px 16px;
 }	
@@ -183,6 +149,50 @@ h3.title
 	font-weight: 400;
 	color: #eec643;
 }
+
+
+						/*MOBILE*/
+
+/*PROMO*/
+@media (max-width: 1199px) {
+	.container {
+		padding-left: 16px;
+		padding-right: 16px;
+
+}
+h3.title
+{
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	line-height: 1;
+	color: #f9fcfc;
+	margin: 3px;
+}
+.text{
+	font-family: 'pt-sans';
+	font-size: 16px;
+	font-weight: 400;
+	color: #f9fcfc;
+	padding-bottom: 5px;
+	margin: 3px;
+}
+.button{
+	box-sizing: border-box;
+	width: 288px;
+	height: 60px;
+	background-color: #eec643;
+	text-align: center;
+	padding: 22px;
+}
+.promo{
+	background-image: url(../images/bg_main_320.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 536px;
+	margin: auto;
+}
+
 
 .mobile-btn {
   position: absolute;
@@ -214,8 +224,9 @@ h3.title
 	line-height: 42px;
 }
 .title_span{
-display: none;
+	display: none;
 }
+
 .promo__text{
 	color: #fff;
 	padding: 39px 0px 95px 16px;
@@ -224,6 +235,12 @@ display: none;
 .promo_button{
 	margin: -17px 4px;
 }
+
+.type__title,.type__text{
+	display: none;
+}
+
+
 
 /*DIRECTIONS*/
 
@@ -283,11 +300,7 @@ display: none;
 	font-size: 30px;
 	color: #021a23;
 }
-/*.element__advantages{
-	text-align: left;
-	width: 180px;
-	padding:15px 0px 11px 9px;
-}*/
+
 .item__composition{
 	width: 288px;
 	height: 144px;
@@ -327,14 +340,7 @@ display: none;
 	margin: auto;
 	width: 215px;
 }
-/*.arrow___video{
-	position: relative;
-	width: 20px;
-	height: 20px;
-	border-top: 2px solid #eec643;
-	border-right: 2px solid #eec643;
-	transform: rotate(45deg);
-}*/
+
 .arrow___video:before{
 	content: '';
 	width: 15px;
@@ -376,10 +382,6 @@ display: none;
 margin: 16px 0px 16px 0px;
 }
 
-
-
-
-
 .aside{
 	padding-left: 15px;
 }
@@ -389,40 +391,291 @@ margin: 16px 0px 16px 0px;
 	display: block;
 }
 
-. {
-	transform: rotate(90deg);
-	transform-origin: right bottom;
-	position: absolute;
-
-	/*transform: none;*/
-/*}
-
-.second--title {
-	position: relative;
+.footer_menu{
+	display: block;
 }
-.second--title:before {
-	content: '';
-	position: absolute;
-	height: 1px;
-	width: 100%;s
-	background-color: #ff0;
-	top: 0;
-	left: 0;
-}
-.second--title:after {
-		content: '';
-		position: absolute;
-		height: 1px;
-		width: 100%;
-		background-color: #ff0;
-		bottom: 0;
-		left: 0;
-}
-*/
 
-@media (min-width: 1160px) {
+
+
+
+
+}
+
+								/*DESKTOP*/
+
+
+								
+
+@media (min-width:1200px) {
+
+	body {
+	  	margin: 0 auto;
+	}
+.promo.wrapper{
+ background-repeat: no-repeat;
+	 background-size: cover;
+	 width: 100%;
+	height: 768px;
+	background-image: url(../images/bg_main.jpg);
+}
+
+.promo_button,.btn-burger,.promo__title {
+display: none;
+}
+
+.title_span{
+	font-family: 'Prata';
+	color: #fff;
+	font-size: 55px;
+	font-weight: 400;
+	line-height: 55px;
+
+}
+
+.block{
+	width: 697px;
+	margin: 146px 10px;
+}
+
+.promo__text{
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	width: 425px;
+	height: 47px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.span--promo{
+	display: none;
+}
+
+
+ul{
+	list-style: 0;
+	display: flex;
+justify-content: flex-end;
+	flex: 0.5px;
+	padding-left:500px;
+}
+
+.main-nav__item{
+	color: #021a23;
+	font-size: 16px;
+	font-weight: 400px;
+	text-transform: uppercase;
+	margin:-87px -23px 0px 55px;
+}
+.name-type{
+	width: 270px;
+	height: 350px;
+	border: 2px solid #021a23;
+	background-color: #fff;
+	opacity: 0.8;
+	margin: -236px 881px;
+	box-shadow:0px 70px 0px 0px #000;
+}
+
+.type__title{
+	font-size: 30px;
+	font-weight: 700;
+	color: #000;
+	line-height: 40px;
+	margin: 30px 25px;
+}
+.type__text{
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	line-height: 28px;
+	margin: 11px 10px 61px 32px;
+
+}
+
+.type__button{
+	margin: 86px 90px;
+}
+.name-type__link{
+	font-size: 20px;
+	color: #fff;
+}
+
+.item___type{
+	margin: auto;
+}
+
+.main__title{
+	transform: rotate(-90deg);
+	width: 540px;
+	color: #000;
+	margin: 352px -48px;
+	font-size: 50px;
+}
+.main__directions{
+	width: 1170px;
+	height: 568px;
+	margin: 89px;
+}
+.block__top__directions{
+	display: flex;
+}
+.item__gitar{
+	width: 470px;
+	height: 269px;
+	background-image: url(../images/directions_card_img_1.jpg);
+	margin: -668px -920px;
+}
+
+.item__foptepiano{
+	width: 470px;
+	height: 269px;
+	background-image: url(../images/directions_card_img_3.jpg);
+	margin:-368px 0px 0px -919px;
+}
+.item__vocal{
+	width: 570px;
+	height: 269px;
+	background-image: url(../images/directions_card_img_2.jpg);
+	margin: -668px -147px 0px 787px;
+}
+.item__lection{
+	width: 270px;
+	height: 269px;
+	background-image: url(../images/directions_card_img_4.jpg);
+	margin: 31px 0px 0px 788px;
+}
+
+h3.title
+{
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+	color: #f9fcfc;
+	margin: 3px;
+}
+.text{
+	display: none;
+}
+.desc{
+	font-family: "PT Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #f9fcfc;
+	line-height: 28px;
+	width: 240px;
+	margin: 1px;
+}
+.text__gitar{
+	margin: 7px 2px;
+}
+.text__gitar___lesson{
+	font-family: "PT Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: #f9fcfc;
+	margin: 29px 3px;
+}
+.element{
+	padding: 16px 26px;
+}
+.button{
+	box-sizing: border-box;
+	width: 270px;
+	height: 269px;
+	background-color: #eec643;
+	text-align: center;
+	margin: -371px 0px 0px 1087px;
+	padding: 22px 204px 0px 12px;
+}
+.link__direction{
+	display: none;
+}
+
+.main__advantages{
+	width: 1170px;
+	height: 568px;
+	margin: 89px;
+}
+.main__title__advantages{
+	font-size: 50px;
+	color: #000;
+	margin: -257px 0px -6px 186px;
+	width: 570px;
+}
+.item__composition{
+	width: 270px;
+	height: 468px;
+	background-image: url(../images/advantages_card_img_1.jpg);
+	background-repeat: no-repeat;
+	margin: 30px 0px 0px 188px;
+}
+
+.item__result{
+	width: 270px;
+	height: 468px;
+	background-image: url(../images/advantages_card_img_2.jpg);
+	background-repeat: no-repeat;
+	margin: -468px 0px 0px 488px;
+}
+.item__studio{
+	width: 270px;
+	height: 568px;
+	background-image: url(../images/advantages_card_img_3.jpg);
+	background-repeat: no-repeat;
+	margin: -566px 100px 100px 788px;
+}
+
+.name-type___advantages{
+	width: 270px;
+	height: 497px;
+	border: 2px solid #eec643;
+	background-color: #fff;
+	margin:-684px 0px 0px 1084px;
+	box-shadow:0px 70px 0px 0px #eec643;
+}
+.title--advantages{
+	color: #eec643;
+}
+.type__button--advantages{
+	padding: 238px 10px 10px 90px;
+}
+.name-type__link--advantages{
+	color: #fff;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (min-width: 1160px) {*/
 	/*menu*/
-.menu {
+/*.menu {
 	display: block;
 	background-color: transparent;
 	width: auto;
@@ -437,4 +690,4 @@ margin: 16px 0px 16px 0px;
 .menu__item a {
 	text-transform: uppercase;
 }
-}
+}*/
