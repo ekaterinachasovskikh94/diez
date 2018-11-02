@@ -154,7 +154,7 @@ h2:after{
 						/*MOBILE*/
 
 /*PROMO*/
-@media (max-width: 1199px) {
+@media (max-width: 1170px) {
 	.container {
 		padding-left: 16px;
 		padding-right: 16px;
@@ -470,7 +470,7 @@ justify-content: flex-end;
 	width: 270px;
 	height: 350px;
 	border: 2px solid #021a23;
-	background-color: #fff;
+	background-color: #fff; 
 	opacity: 0.8;
 	margin: -236px 881px;
 	box-shadow:0px 70px 0px 0px #000;
@@ -508,40 +508,46 @@ justify-content: flex-end;
 	transform: rotate(-90deg);
 	width: 540px;
 	color: #000;
-	margin: 352px -48px;
+/*	margin: 352px -48px;*/
 	font-size: 50px;
 }
+
+
+								/*DIRECTIONS*/
+
+
 .main__directions{
-	margin-left: -420px;
-	min-height: 640px;
-}
-.block__top__directions{
 	display: flex;
 }
+.direction__container{
+	flex-wrap: wrap;
+	min-width: 1170px;
+}
 .item__gitar{
-	width: 470px;
-	height: 269px;
+/*	width: 50%;*/
 	background-image: url(../images/directions_card_img_1.jpg);
-	margin: -668px -920px;
+	background-repeat: no-repeat;
+/*	margin: -668px -920px;*/
 }
 
 .item__foptepiano{
-	width: 470px;
-	height: 269px;
+/*	width: 50%;*/
 	background-image: url(../images/directions_card_img_3.jpg);
-	margin:-368px 0px 0px -919px;
+	background-repeat: no-repeat;
+/*	margin:-368px 0px 0px -919px;*/
 }
 .item__vocal{
-	width: 570px;
-	height: 269px;
+/*	width: 50%;*/
 	background-image: url(../images/directions_card_img_2.jpg);
-	margin: -668px -147px 0px 787px;
+	background-repeat: no-repeat;
+/*	margin: -668px -147px 0px 787px;*/
 }
 .item__lection{
-	width: 270px;
-	height: 269px;
+/*	width: 270px;
+	height: 269px;*/
 	background-image: url(../images/directions_card_img_4.jpg);
-	margin: 31px 0px 0px 788px;
+	background-repeat: no-repeat;
+/*	margin: 31px 0px 0px 788px;*/
 }
 
 h3.title
@@ -584,12 +590,14 @@ h3.title
 	height: 269px;
 	background-color: #eec643;
 	text-align: center;
-	margin: -371px 0px 0px 1087px;
-	padding: 22px 204px 0px 12px;
+/*	margin: -371px 0px 0px 1087px;
+	padding: 22px 204px 0px 12px;*/
 }
 .link__direction{
 	display: none;
 }
+
+								/*ADVANTAGES*/
 
 .main__advantages{
 	margin-left: -420px;
