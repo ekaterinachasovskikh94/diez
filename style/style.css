@@ -406,7 +406,7 @@ margin: 16px 0px 16px 0px;
 
 								
 
-@media (min-width:1200px) {
+@media (min-width:1170px) {
 
 	body {
 	  	margin: 0 auto;
@@ -506,7 +506,7 @@ justify-content: flex-end;
 
 .main__title{
 	transform: rotate(-90deg);
-	width: 540px;
+/*	width: 540px;*/
 	color: #000;
 /*	margin: 352px -48px;*/
 	font-size: 50px;
@@ -516,35 +516,60 @@ justify-content: flex-end;
 								/*DIRECTIONS*/
 
 
-.main__directions{
+.direction__container{
+	display: flex;
+	width: 100%;
+	min-height: 600px;
+}
+.wrap__directions{
+	flex-direction: row;
+}
+
+.block--direction{
+	padding-left: 156px;
+}
+.inner__title{
 	display: flex;
 }
-.direction__container{
-	flex-wrap: wrap;
-	min-width: 1170px;
+.inner__medium{
+	width: 40%;
+}
+
+.inner__wide{
+	width: 50%;
+}
+
+.inner__small{
+	width: 25%;
+}
+
+.line__top, .line__bottom{
+	display: flex;
 }
 .item__gitar{
-/*	width: 50%;*/
+	width: 470px;
 	background-image: url(../images/directions_card_img_1.jpg);
 	background-repeat: no-repeat;
 /*	margin: -668px -920px;*/
 }
 
 .item__foptepiano{
-/*	width: 50%;*/
+	width: 470px;
+	height: 269px;
 	background-image: url(../images/directions_card_img_3.jpg);
 	background-repeat: no-repeat;
 /*	margin:-368px 0px 0px -919px;*/
 }
 .item__vocal{
-/*	width: 50%;*/
+	width: 570px;
+	height: 269px;
 	background-image: url(../images/directions_card_img_2.jpg);
 	background-repeat: no-repeat;
 /*	margin: -668px -147px 0px 787px;*/
 }
 .item__lection{
-/*	width: 270px;
-	height: 269px;*/
+	width: 270px;
+	height: 269px;
 	background-image: url(../images/directions_card_img_4.jpg);
 	background-repeat: no-repeat;
 /*	margin: 31px 0px 0px 788px;*/
@@ -599,7 +624,7 @@ h3.title
 
 								/*ADVANTAGES*/
 
-.main__advantages{
+/*.main__advantages{
 	margin-left: -420px;
 	min-height: 640px;
 }
@@ -649,7 +674,7 @@ h3.title
 .name-type__link--advantages{
 	color: #fff;
 }
-
+*/
 
 }
 
