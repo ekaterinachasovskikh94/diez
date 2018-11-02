@@ -550,7 +550,6 @@ justify-content: flex-end;
 	width: 470px;
 	background-image: url(../images/directions_card_img_1.jpg);
 	background-repeat: no-repeat;
-/*	margin: -668px -920px;*/
 }
 
 .item__foptepiano{
@@ -558,21 +557,18 @@ justify-content: flex-end;
 	height: 269px;
 	background-image: url(../images/directions_card_img_3.jpg);
 	background-repeat: no-repeat;
-/*	margin:-368px 0px 0px -919px;*/
 }
 .item__vocal{
 	width: 570px;
 	height: 269px;
 	background-image: url(../images/directions_card_img_2.jpg);
 	background-repeat: no-repeat;
-/*	margin: -668px -147px 0px 787px;*/
 }
 .item__lection{
 	width: 270px;
 	height: 269px;
 	background-image: url(../images/directions_card_img_4.jpg);
 	background-repeat: no-repeat;
-/*	margin: 31px 0px 0px 788px;*/
 }
 
 h3.title
@@ -615,8 +611,6 @@ h3.title
 	height: 269px;
 	background-color: #eec643;
 	text-align: center;
-/*	margin: -371px 0px 0px 1087px;
-	padding: 22px 204px 0px 12px;*/
 }
 .link__direction{
 	display: none;
