@@ -382,7 +382,7 @@ h3.title
 	width: 240px;
 	height: 186px;
 	margin: 20px;
-	background-image: url(../images/video_card_img_1_320.jpg);
+	background-image: url(../images/img_5.jpg);
 }
 .block__right__video{
 	display: none;
@@ -924,7 +924,7 @@ h3.title
 	padding-top: 94px;
 }
 
-.btm, .arrow___video, .box__left{
+.btm, .arrow___video, .box__left, .slider, .video_card{
 	display: none;
 }
 
