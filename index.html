@@ -6,7 +6,9 @@
 	<title>diez-chasovskikh</title>
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/fonts.css">
+	<link rel="stylesheet" href="style/slick.css">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/selectize.css">
 </head>
 
 <body>
@@ -15,295 +17,247 @@
 
 			<!-- PROMO -->
 			<section class="promo">
-				<div class="container promo__container">
-			<header class="header">
+	<div class="container promo__container">
+
+		<header class="header">
 			<div class="block__top--promo">
-			
-			<div class="logo">	
-				<span class="logotip">Diez</span>
-			</div>
+				<div class="logo">	<span class="logotip">Diez</span>
+				</div>
 
-			<button class="mobile-btn btn-wrapper"> <span class="btn-burger" data-state="off">Menu</span>
-			</button>
 
-			<div class="nav__promo">
-			<nav class="main-nav">
-			<ul class="main-nav__list">
-			<li class="main-nav__item"><a href="#">Направления</a></li>
-			<li class="main-nav__item"><a href="#">О школе</a></li>
-			<li class="main-nav__item"><a href="#">Видео</a></li>
-			<li class="main-nav__item"><a href="#">Контакты</a></li>
+
+	<button class="mobile-btn j-nav-toggle btn-wrapper" data-state="off">
+		<span class="btn-burger">Menu</span>
+	</button>
+	<div class="nav__promo">
+		<nav class="main-nav j-mobile-nav">
+			<ul class="main-nav__list"> 
+				<li class="main-nav__item"><a href="#direction">Направления</a>
+				</li>
+				<li class="main-nav__item"><a href="#advantages">О школе</a>
+				</li>
+				<li class="main-nav__item"><a href="#video">Видео</a>
+				</li>
+				<li class="main-nav__item"><a href="#contacts">Контакты</a>
+				</li>
 			</ul>
-			</nav>
-			</div>
-			</div>
+		</nav>
+	</div>
+	</div>
 
-			</header>
+
+
+		</header>
+
+
 
 		<div class="block__bottom--promo">
-		
-		<div class="promo--title__text">
-		<h1 class="title promo__title">Школа музыкального искусства</h1><span class="title_span">Diez — школа <br> музыкального искусства</span>
-		<p class="promo__text">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки </p><span class="span--promo">и не бояться сцены</span>
-		</div>
-
-	<div class="button--promo">	
-		<div class="button promo_button">	
-			<a href="#" class="promo__link">ВВОДНЫЙ УРОК</a>
-		</div>
-		</div>
-
-		<div class="promo--form">
-
-		<div class="name-type">
-			<p class="type__title">Вводный урок</p>
-			<p class="type__text">Попробуй любые направления  бесплатно</p>
-			<div class="item___type">
-
-			<input class="promo__name"placeholder="Имя">
-
-			<input class="promo__number"placeholder="Телефон">
-
-			<select class="promo__select">
-          <option selected="selected">Направления</option>
-          <option>Вокал</option>
-          <option>Гитара</option>
-          <option>Фортепиано</option>
-          <option>Лекции</option>
-		</select>
-		<div class="type__button">
-		<a href="#" class="record__button">Записаться</a>
-		</div>
-	
-		</div>
-		</div>
-		</div>
-		</section>
+			<div class="promo--title__text">
+				<h1 class="title promo__title">Школа музыкального искусства</h1><h1 class="title__diez">Diez — школа <br> музыкального искусства</h1>
+				<p class="promo__text">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p><span class="span--promo">и не бояться сцены</span>
+			</div>
+			<div class="button--promo">
+				<div class="button promo_button">	<a href="#" class="promo__link">ВВОДНЫЙ УРОК</a>
+				</div>
+			</div>
+			<div class="promo--form">
+				<div class="name-type">
+					<p class="type__title">Вводный урок</p>
+					<p class="type__text">Попробуй любые направления бесплатно</p>
+					<div class="item___type">
+						<input class="promo__name" placeholder="Имя">
+						<input class="promo__number" placeholder="Телефон">
+						<select class="promo__select">
+							<option selected="selected">Направления</option>
+							<option>Вокал</option>
+							<option>Гитара</option>
+							<option>Фортепиано</option>
+							<option>Лекции</option>
+						</select>
+						<div class="type__button">	<a href="#" class="record__button">Записаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
+</section>
 
 			<!-- DIRECTIONS -->
 
-		<section class="main__directions">
-				<div class="container direction__container">
-
-			<div class="inner__title">
+<section class="main__directions">
+	<a id="direction"></a>
+	<div class="container direction__container">
+		<div class="inner__title">
 			<h2 class="title main__title">Растим музыкантов</h2>
-			</div>
-
-			<div class="block--direction">
-
-			<div class="line__top">
-
-			<div class="inner__medium">	
-				<div class="item__gitar">
-				<div class="element">
-			<h3 class="title">Гитара</h3>
-			<p class="text">Начни играть, как Джими Хендрикс</p>
-			<p class="desc text__gitar">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андрес Сеговия— мы научим</p>
-			<p class="desc text__gitar___lesson">1 урок от 800₽</p>
-				</div>
-					</div>
-			</div>
-			
-				<div class="inner__wide">
-				<div class="item__vocal">
-				<div class="element">
-					<h3 class="title">Вокал</h3>
-				<p class="text">Пой, как Селин Дион и Эми Вайнхаус</p>
-				<p class="desc">Академический, рок, эстрадный, джазовый</p>
-			</div>
-				</div>
-				</div>
-
-				</div>
-
-			<div class="line__bottom">
-
-			<div class="inner__medium">
-
-			<div class="block__buttom__directions">	
-			<div class="item__foptepiano">
-				<div class="element">
-					<h3 class="title">Фортепиано</h3>
-				<p class="text">Чувствуй клавиши, как Людовико Эйнауди</p>
-				<p class="desc">Академический, рок, эстрадный, джазовый</p>
-				</div>
-					</div>
-					</div>
-					</div>
-
-			
-
-			<div class="inner__small">
-			<div class="item__lection">
-				<div class="element">
-					<h3 class="title">Лекции</h3>
-				<p class="desc">Подтяни свои знания в теории музыки</p>
-			</div>
-				</div>
-				</div>
-			
-			<div class="inner__small">
-			<div class="button button__right--direction">
-
-<div class="link__rotate">
-			<a href="#" class="link__text__direction">Все направления</a>
-			</div>
-			<a href="#" class="link__title__direction">
-				<h3 class="title__button">Все <br>направления</h3>
-			</a>
-			</div>
 		</div>
+		<div class="block--direction">
+			<div class="line__top">
+				<div class="inner__medium">
+					<div class="item__gitar">
+						<div class="element">
+							<h3 class="title">Гитара</h3>
+							<p class="text">Начни играть, как Джими Хендрикс</p>
+							<p class="desc text__gitar">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андрес Сеговия— мы научим</p>
+							<p class="desc text__gitar___lesson">1 урок от 800₽</p>
+						</div>
+					</div>
 				</div>
-				</div>>
-
-
+				<div class="inner__wide">
+					<div class="item__vocal">
+						<div class="element">
+							<h3 class="title">Вокал</h3>
+							<p class="text">Пой, как Селин Дион и Эми Вайнхаус</p>
+							<p class="desc">Академический, рок, эстрадный, джазовый</p>
+						</div>
+					</div>
 				</div>
-			</section>
+			</div>
+			<div class="line__bottom">
+				<div class="inner__medium">
+					<div class="block__buttom__directions">
+						<div class="item__foptepiano">
+							<div class="element">
+								<h3 class="title">Фортепиано</h3>
+								<p class="text">Чувствуй клавиши, как Людовико Эйнауди</p>
+								<p class="desc">Академический, рок, эстрадный, джазовый</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="inner__small">
+					<div class="item__lection">
+						<div class="element">
+							<h3 class="title">Лекции</h3>
+							<p class="desc">Подтяни свои знания в теории музыки</p>
+						</div>
+					</div>
+				</div>
+				<div class="inner__small">
+					<div class="button button__right--direction">
+						<div class="link__rotate">	<a href="#" class="link__text__direction">Все направления</a>
+						</div>
+						<a href="#" class="link__title__direction">
+							<h3 class="title__button">Все <br>направления</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>></div>
+</section>
 
 
 
 			<!-- ADVANTAGES -->
 <section class="main__advantages">
+	<a id="advantages"></a>
 	<div class="container advantages__container">
-
-
-
 		<div class="block--advantages">
-
-		<div class="block__top__advantages">
-
-		<div class="inner__title--top">
-		<h2 class="title title__advantages">Задаем темп</h2>
-		</div>
-
-		<div class="wrap--advantages">
-			<div class="inner__medium__advantages">
-			<div class="item__composition">
-				<div class="element">
-					<h3 class="title">Состав</h3>
-					<p class="text">Учись только у профессионалов</p>
-					<p class="desc">Тебя будут обучать  профессионалы с высшим музыкальным образованием</p>
+			<div class="block__top__advantages">
+				<div class="inner__title--top">
+					<h2 class="title title__advantages">Задаем темп</h2>
 				</div>
-			</div>
-			</div>
-
-
-
-			<div class="inner__medium__advantages">
-			<div class="item__result">
-				<div class="element">
-					<h3 class="title">Результат</h3>
-					<p class="text">Выуступай на отчетных концертах</p>
-					<p class="desc">Выступи на отчетном концерте через три месяца обучения</p>
-				</div>
-			</div>
-			</div>
-			</div>
-
-		</div>
-
-		<div class="block__buttom__advantages">
-			<div class="inner__wide__advantages">
-			<div class="item__studio">
-				<div class="element">
-					<h3 class="title">Студия</h3>
-					<p class="text">Записывай песни каждый месяц</p>
-					<p class="desc">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-				</div>
-				</div>
-				</div>
-
-
-					<div class="button__right--advantages">	
-						<div class="link__rotate">
-						<a href="#" class="link link_advantages">ВВОДНЫЙ УРОК</a>
+				<div class="wrap--advantages">
+					<div class="inner__medium__advantages">
+						<div class="item__composition">
+							<div class="element">
+								<h3 class="title">Состав</h3>
+								<p class="text">Учись только у профессионалов</p>
+								<p class="desc">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+							</div>
 						</div>
 					</div>
-
-					
-
-			<div class="inner__wide__advantages">
-
-			<div class="name-type___advantages">
-			<p class="type__title type__title__advantages">Вводный урок</p>
-			<p class="type__text">Попробуй любые направления  бесплатно</p>
-			<div class="item___type__advantages">
-
-			<input class="name"placeholder="Имя">
-
-
-			<input class="number" placeholder="Телефон">
-
-			<select class="selection">
-          <option  selected="selected">Направления</option>
-          <option>Вокал</option>
-          <option>Гитара</option>
-          <option>Фортепиано</option>
-          <option>Лекции</option>
-		</select>
-		</div>		
-		<div class="type__button type__button__advantages">
-		<a href="#" class="record__button">Записаться</a>
-		</div>
+					<div class="inner__medium__advantages">
+						<div class="item__result">
+							<div class="element">
+								<h3 class="title">Результат</h3>
+								<p class="text">Выуступай на отчетных концертах</p>
+								<p class="desc">Выступи на отчетном концерте через три месяца обучения</p>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="block__buttom__advantages">
+				<div class="inner__wide__advantages">
+					<div class="item__studio">
+						<div class="element">
+							<h3 class="title">Студия</h3>
+							<p class="text">Записывай песни каждый месяц</p>
+							<p class="desc">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+						</div>
+					</div>
 				</div>
-		
-			</section>
+				<div class="button__right--advantages">
+					<div class="link__rotate">	<a href="#" class="link link_advantages">ВВОДНЫЙ УРОК</a>
+					</div>
+				</div>
+				<div class="inner__wide__advantages">
+					<div class="name-type___advantages">
+						<p class="type__title type__title__advantages">Вводный урок</p>
+						<p class="type__text">Попробуй любые направления бесплатно</p>
+						<div class="item___type__advantages">
+							<input class="name" placeholder="Имя">
+							<input class="number" placeholder="Телефон">
+							<select class="selection">
+								<option selected="selected">Направления</option>
+								<option>Вокал</option>
+								<option>Гитара</option>
+								<option>Фортепиано</option>
+								<option>Лекции</option>
+							</select>
+						</div>
+						<div class="type__button type__button__advantages">	<a href="#" class="record__button">Записаться</a>
+						</div>
+					</div>
+				</div>
+</section>
 
 			<!-- VIDEO -->
 
 		<section class="main__video">
-			<div class="container video__container">
-
-<div class="block__left__video">
-
+			<a id="video"></a>
+	<div class="container video__container">
+		<div class="block__left__video">
 			<div class="inner__title">
 				<h2 class="title main__title">В стенах школы</h2>
 			</div>
-					<div class="arrow___video"></div>
-
-					<div class="box__wide--video">
-						<div class="item__wide--video">
-
-						<div class="element__wide--video">
-							<h3 class="title">Зимняя вишня</h3>
-							<p class="text">Финальный концерт 2018 года</p>
-							<p class="desc">Заключительный зимний <br> концерт 2017 года <br>выступало 97 учеников</p>
-						</div>
-</div>
-</div>
-
-</div>
-
-<div class="block__right__video">
-
-	<div class="small--video__top">
-		<div class="element element__video">
-		<p class="small--title">Янг Чжо</p>
-		<p class="small--desc">Репетиция сольной партии скрипки</p>
+			<div class="arrow___video"></div>
+			<div class="box__wide--video">
+				<div class="item__wide--video">
+					<div class="element__wide--video">
+						<h3 class="title">Зимняя вишня</h3>
+						<p class="text">Финальный концерт 2018 года</p>
+						<p class="desc">Заключительный зимний
+							<br>концерт 2017 года
+							<br>выступало 97 учеников</p>
+					</div>
+				</div>
+			</div>
 		</div>
-</div>
-	<div class="small--video__middle">
-		<div class="element element__video">
-		<p class="small--title">Летний штиль</p>
-		<p class="small--desc">За кулисами концерта</p>
+		<div class="block__right__video">
+			<div class="small--video__top">
+				<div class="element element__video">
+					<p class="small--title">Янг Чжо</p>
+					<p class="small--desc">Репетиция сольной партии скрипки</p>
+				</div>
+			</div>
+			<div class="small--video__middle">
+				<div class="element element__video">
+					<p class="small--title">Летний штиль</p>
+					<p class="small--desc">За кулисами концерта</p>
+				</div>
+			</div>
+			<div class="small--video__bottom">
+				<div class="element element__video">
+					<p class="small--title">Летний штиль</p>
+					<p class="small--desc">За кулисами концерта</p>
+				</div>
+			</div>
 		</div>
-</div>
-
-	<div class="small--video__bottom">
-		<div class="element element__video">
-		<p class="small--title">Летний штиль</p>
-		<p class="small--desc">За кулисами концерта</p>
-		</div>
-</div>
-
-</div>
-		</section>
-
-
+</section>
 
 			<!-- CONTACTS -->
 <section class="main_contacts">
+	<a id="contacts"></a>
 	<div class="container contacts__container">
 
 		<div class="block--contacts__left">
@@ -384,7 +338,11 @@
 
 		<!-- </div> -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 		<script src="js/script.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/selectize.min.js"></script>
 </body>
 
 </html>

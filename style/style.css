@@ -75,21 +75,21 @@ h2{
 .btn-burger::after {
   bottom: -8px;
 }
-.btn-burger[data-state="on"] {
+.mobile-btn[data-state="on"] span {
   background: transparent;
   /*border-color: #fff;*/
   height: 100%;
   margin: auto;
 }
-.btn-burger[data-state="on"]::before, .btn-burger[data-state="on"]::after {
+.mobile-btn[data-state="on"] span::before, .mobile-btn[data-state="on"] span::after {
   transition: all .2s .4s;
 }
-.btn-burger[data-state="on"]::after {
+.mobile-btn[data-state="on"] span::after {
   bottom: 0;
   top: 0;
   transform: rotate(45deg);
 }
-.btn-burger[data-state="on"]::before {
+.mobile-btn[data-state="on"] span::before {
   bottom: 0;
   top: 0;
   transform: rotate(-45deg);
@@ -167,6 +167,11 @@ h3.title
 	color: #f9fcfc;
 	margin: 3px;
 }
+
+
+.title__diez{
+	display: none;
+}
 .text{
 	font-family: 'pt-sans';
 	font-size: 16px;
@@ -199,13 +204,21 @@ h3.title
 }
 
 .main-nav{
-	display: none;
-	background-color: #fff;
+	background-color: #000;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: all 0.3s;
 }
+
+.main-nav.is-open {
+	transform: translateY(0);
+	opacity: 1;
+}
+
 .main-nav__list {
 }
 .main-nav__item {
@@ -403,10 +416,6 @@ h3.title
 
 /*CONTACTS*/
 
-.address{
-	color: black;
-}
-
 .tel{
 	color: black;
 }
@@ -416,6 +425,7 @@ margin: 16px 0px 16px 0px;
 }
 
 .aside{
+		color: black;
 	padding-left: 15px;
 }
 
@@ -470,13 +480,16 @@ margin: 16px 0px 16px 0px;
 	padding-top: 72px;
 	width: 74%;
 }
-.title_span{
+.title__diez{
 	font-family: 'Prata';
 	color: #fff;
 	font-size: 55px;
 	font-weight: 400;
 	line-height: 55px;
 
+}
+.promo__title{
+	display: none;
 }
 
 .logo{
@@ -987,13 +1000,13 @@ h3.title
 	justify-content: flex-end;
 }
 
-.menu--item{
-	color: #021a23;
-	font-size: 12px;
-	font-weight: 400px;
-	text-transform: uppercase;
-	padding-right: 32px;
-}
+	.menu--item{
+		color: #021a23;
+		font-size: 12px;
+		font-weight: 400px;
+		text-transform: uppercase;
+		padding-right: 32px;
+	}
 
 
 

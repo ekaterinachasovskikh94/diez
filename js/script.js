@@ -1,7 +1,14 @@
 (function() {
 
+var btnBurger = $('.j-nav-toggle');
+var mainNav = $('.j-nav-toggle');
+var isShown = false;
+
+
+
+
   // Method to change states which works in IE7+ / IE8+
-  var btn = document.querySelector('.btn-wrapper');
+  var btn = document.querySelector('.j-nav-toggle');
 
   // asdf
   var toggleState = function(elm, att, one, two) {
@@ -14,17 +21,75 @@
 
   // turn active state on or off
   btn.onclick = function(e) {
-    toggleState('.btn-burger', 'data-state', 'off', 'on');
+    console.log('aga');
+    toggleState('.j-nav-toggle', 'data-state', 'off', 'on');
     toggleState('.btn-wrapper', 'aria-pressed', 'false', 'true');
     e.preventDefault();
   }
 
-  $('.mobile-btn').click(function() {
-    $('.menu').toggle();
-    console.log(11111)
+  $('.j-nav-toggle').click(function() {
+    $('.j-mobile-nav').toggleClass('is-open');
   });
 
 })();
+
+
+
+
+// $(document).ready(function(){
+
+//   $('.super-select').selectize();
+
+//   var slickIsActive = false;
+
+//   checkSlider();
+
+//   $(window).on('resize', function(){
+//     checkSlider();
+//   });
+
+  function checkSlider(){
+
+    if( $(window).width() < 600 ) {
+      if( slickIsActive === false ) {
+        $('#slider').slick({
+          dots: true,
+          autoplay: true,
+          // autoplaySpeed: 500,
+        });
+        slickIsActive = true;
+      }
+    }
+    else {
+      if( slickIsActive === true ) {
+        $('#slider').slick('unslick');
+        slickIsActive = false;
+      }
+    }
+  }
+
+
+responsive: [
+{
+  breakpoint: 1024,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    dots: true
+  }
+}]
+
+
+
+
+
+
+
+
+
+
+
 
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
