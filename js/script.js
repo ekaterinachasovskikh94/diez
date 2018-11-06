@@ -50,35 +50,55 @@ var isShown = false;
 
   function checkSlider(){
 
-    if( $(window).width() < 600 ) {
-      if( slickIsActive === false ) {
-        $('#slider').slick({
-          dots: true,
-          autoplay: true,
-          // autoplaySpeed: 500,
-        });
-        slickIsActive = true;
-      }
-    }
-    else {
-      if( slickIsActive === true ) {
-        $('#slider').slick('unslick');
-        slickIsActive = false;
-      }
-    }
-  }
-
 
         $(window).on("resize", function () {
 
         if (window.innerWidth > 320) {
 
-        $(".slider").slick("unslick");
+        $(".sl").slick("unslick");
         } else {
-        $(".slider").slick();
+        $(".sl").slick({
+
+        autoplay: true,
+        autoplaySpeed: 500,
+
+        });
         }
 
         });
+
+
+}
+
+
+
+
+
+
+  //   if( $(window).width() < 600 ) {
+  //     if( slickIsActive === false ) {
+  //       $('#slider').slick({
+  //         dots: true,
+  //         autoplay: true,
+  //         // autoplaySpeed: 500,
+  //       });
+  //       slickIsActive = true;
+  //     }
+  //   }
+  //   else {
+  //     if( slickIsActive === true ) {
+  //       $('#slider').slick('unslick');
+  //       slickIsActive = false;
+  //     }
+  //   }
+  // }
+
+
+
+
+
+
+
 
 
 
