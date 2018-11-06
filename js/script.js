@@ -55,9 +55,9 @@ var isShown = false;
 
         if (window.innerWidth > 320) {
 
-        $(".sl").slick("unslick");
+        $(".box__wide--video").slick("unslick");
         } else {
-        $(".sl").slick({
+        $(".box__wide--video").slick({
 
         autoplay: true,
         autoplaySpeed: 500,
