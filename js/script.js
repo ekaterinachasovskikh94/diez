@@ -48,29 +48,30 @@ var isShown = false;
 //     checkSlider();
 //   });
 
-  function checkSlider(){
+//   function checkSlider(){
 
 
-        $(window).on("resize", function () {
+//         $(window).on("resize", function () {
 
-        if (window.innerWidth > 320) {
+//         if (window.innerWidth > 320) {
 
-        $(".box__wide--video").slick("unslick");
-        } else {
-        $(".box__wide--video").slick({
+//         $(".slider").slick("unslick");
+//         } else {
+//         $(".slider").slick({
 
-        autoplay: true,
-        autoplaySpeed: 500,
+//         autoplay: true,
+//         autoplaySpeed: 500,
 
-        });
-        }
+//         });
+//         }
 
-        });
-
-
-}
+//         });
 
 
+// }
+
+
+$('.slider').slick();
 
 
 

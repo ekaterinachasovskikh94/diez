@@ -378,7 +378,7 @@ h3.title
 
 /*VIDEO*/
 
-.box__wide--video{
+.first__wide--video{
 	width: 240px;
 	height: 186px;
 	margin: 20px;
@@ -773,7 +773,8 @@ h3.title
 }
 
 
-.block__top__advantages{
+.
+_top__advantages{
 	display: flex;
 	flex-wrap: wrap;
 	width: 50%;
@@ -895,7 +896,7 @@ h3.title
 	display: flex;
 	flex-wrap: wrap;
 }
-.item__wide--video{
+.first__wide--video{
 	padding-left: 20px;
 	width: 770px;
 	height: 568px;
@@ -906,9 +907,9 @@ h3.title
 .element__wide--video{
 	padding-top: 22px;
 }
-.box__wide--video{
+/*.box__wide--video{
 	padding-left: 44px;
-}
+}*/
 
 
 .small--video__top{
