@@ -378,11 +378,10 @@ h3.title
 
 /*VIDEO*/
 
-.first__wide--video{
+.card__video{
 	width: 240px;
 	height: 186px;
 	margin: 20px;
-	background-image: url(../images/img_5.jpg);
 }
 
 .slick-prev{
@@ -405,7 +404,7 @@ h3.title
 	transform: rotate(45deg);
 	margin:75px 0px 0px 260px;
 }
-.small--video__top{
+/*.small--video__top{
 	width: 240px;
 	height: 186px;
 	margin: 20px;
@@ -424,11 +423,13 @@ h3.title
 	height: 186px;
 	margin: 20px;
 	background-image: url(../images/video_card_img_4.jpg);
-}
-.element__wide--video{
+}*/
+/*.element__wide--video{
 	padding-top: 120px;
+}*/
+.box__video{
+display: none;	
 }
-
 
 /*CONTACTS*/
 
@@ -885,11 +886,13 @@ _top__advantages{
 	min-height: 600px;
 	padding-top: 90px;
 }
-
-.block__left__video{
+.slider{
+	display: none;
+}
+/*.block__left__video{
 	width: 75%;
 	display: flex;
-}
+}*/
 .block__right__video{
 	width: 25%;
 	padding-left: 16px;
@@ -907,10 +910,10 @@ _top__advantages{
 .element__wide--video{
 	padding-top: 22px;
 }
-/*.box__wide--video{
-	padding-left: 44px;
-}*/
 
+.box__video{
+	display: flex;
+}
 
 .small--video__top{
 	width: 270px;
@@ -940,8 +943,7 @@ _top__advantages{
 .element__video{
 	padding-top: 94px;
 }
-
-.btm, .arrow___video, .box__left, .slider, .video_card{
+ .video_card, .slider{
 	display: none;
 }
 

@@ -71,7 +71,15 @@ var isShown = false;
 // }
 
 
-$('.slider').slick();
+
+
+$('.slider').slick({
+
+  autoplay:true,
+  autoplaySpeed: 500,
+
+}
+  );
 
 
 
