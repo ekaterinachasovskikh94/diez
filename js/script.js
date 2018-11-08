@@ -51,24 +51,22 @@ var isShown = false;
 //   function checkSlider(){
 
 
-//         $(window).on("resize", function () {
+        // $(window).on("resize", function () {
 
-//         if (window.innerWidth > 320) {
+        // if (window.innerWidth > 320) {
 
-//         $(".slider").slick("unslick");
-//         } else {
-//         $(".slider").slick({
+        // $(".slider").slick("unslick");
+        // } else {
+        // $(".slider").slick({
 
-//         autoplay: true,
-//         autoplaySpeed: 500,
+        // autoplay: true,
+        // autoplaySpeed: 500,
 
-//         });
-//         }
-
-//         });
+        // });
 
 
-// }
+
+
 
 
 
@@ -76,7 +74,7 @@ var isShown = false;
 $('.slider').slick({
 
   autoplay:true,
-  autoplaySpeed: 500,
+  autoplaySpeed: 1000,
 
 }
   );
