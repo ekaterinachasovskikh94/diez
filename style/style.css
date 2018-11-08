@@ -379,11 +379,25 @@ h3.title
 /*VIDEO*/
 
 .card__video{
-	width: 240px;
+	width: 200px;
 	height: 186px;
-	margin: 20px;
+	margin: 10px;
 }
 
+.slick-prev{
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-bottom: 1px solid #eec643;
+	border-left: 1px solid #eec643;
+	transform: rotate(45deg);
+	font-size: 0;
+	background: transparent;
+	border-right: 0;
+	border-top: 0;
+	margin: 80px -10px;
+
+}
 .slick-next{
 	content: '';
 	width: 15px;
@@ -392,18 +406,16 @@ h3.title
 	border-right: 1px solid #eec643;
 	transform: rotate(45deg);
 	font-size: 0;
+	background: transparent;
+	border-left: 0;
+	border-bottom: 0;
+	margin-left: 280px;
 
 }
-.slick-arrow{
-	content: '';
-	width: 15px;
-	height: 15px;
-	border-top: 1px solid #eec643;
-	border-right: 1px solid #eec643;
-	transform: rotate(-45deg);
-	font-size: 0;
-
+.slick-list{
+	margin-top: -199px;
 }
+
 /*.slick-arrow:after{
 	content: '';
 	width: 15px;
